@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RPS Redux</title>
+  <link href="assets/css/reset.css" type="text/css" rel="stylesheet" />
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+  <script src="assets/js/logic.js"></script>
+  <header id="main-header">
+    <h1>Rock Paper Scissors</h1>
+  </header>
+  <header id="status-header">
+    <h2>Hi <span id="player-name"></span>! You are Player <span id="player-number"></span></h2>
+    <h2 id="turn">&nbsp;</h2>
+  </header>
+  <form id="name-form">
+    <input type="text" id="name-field" placeholder="Name" />
+    <input type="submit" value="Start" id="name-button" />
+  </form>
+  <div id="game-area">
+    <div class="game-box-player" data-player="1"></div>
+    <div class="game-box-status">
+      <h2 id="status-heading">&nbsp;</h2>
+    </div>
+    <div class="game-box-player" data-player="2"></div>
+  </div>
+  <div id="chat-area">
+    <ul id="chat-box"></ul>
+    <form id="chat-form">
+      <input type="submit" id="chat-button" value="Send" />
+      <div id="chat-text-holder">
+        <input type="text" id="chat-field" />
+      </div>
+    </form>
+  </div>
+</body>
+</html>

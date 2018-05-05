@@ -1,0 +1,120 @@
+body {
+  background-color: #e8f3d6;
+  font-family: Palatino, serif;
+  text-align: center;
+}
+
+#main-header {
+  background-color: #c8dec2;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+button, [type=submit], [type=button] {
+  border: 1px;
+  border-radius: 0px;
+  border-color: lightgray;
+  border-style: solid;
+}
+
+#status-header > h2 {
+  font-size: 1.4em;
+}
+
+#name-form {
+  text-align: center;
+}
+
+#game-area {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 580px;
+}
+
+[class|=game-box] {
+  border: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  width: 170px;
+  height: 125px;
+  padding: 5px;
+}
+
+.game-box-player {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game-box-player-turn {
+  border-color: yellow !important;
+}
+
+#status-heading {
+  font-size: 3em;
+}
+
+.player-name-header {
+  font-size: 1em;
+}
+
+.win-loss {
+  font-size: 0.8em;
+}
+
+.chosen {
+  font-size: 2em;
+}
+
+.rps-choices {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.rps-choice:hover {
+  color: red;
+}
+
+#chat-area {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#chat-box, #chat-form {
+  width: 100%;
+}
+
+#chat-box {
+  text-align: left;
+  padding: 8px;
+  height: calc(10em+16px);
+  border: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  background-color: white;
+  margin-bottom: 8px;
+}
+
+#chat-text-holder {
+  overflow: hidden;
+  padding-right: 8px;
+}
+
+#chat-field {
+  width: 100%;
+}
+
+#chat-button {
+  float: right;
+}
